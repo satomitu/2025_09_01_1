@@ -38,4 +38,14 @@ public class PrefDataStore {
                 })
                 .subscribe();
     }
+
+    public Optional<String> getString(String key){
+        return dataStore.data()
+                .map(prefs ->{
+
+                    var prefkey = PreferencesKeys.stringKey(key);
+                    return Optional.ofNullable(prefs.get(prefkey));
+                })
+                .blockingFirst();
+    }
 }
