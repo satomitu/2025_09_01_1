@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._2025_09_01_1">
         <activity
+            android:name=".MainActivity6"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity5"
             android:exported="false" />
         <activity
@@ -30,7 +33,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity6"
+            android:name=".MainActivity7"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
